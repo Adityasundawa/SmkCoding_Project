@@ -44,31 +44,14 @@
             android:layout_marginRight="20dp"
             android:hint="@string/form_jenisKelamin"/>
 
-<!--        <Spinner-->
-<!--            android:id="@+id/dropdown"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_marginLeft="20dp"-->
-<!--            android:layout_marginRight="20dp"-->
-<!--            android:layout_alignParentTop="true"/>-->
-
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="18dp"
             android:layout_marginRight="20dp"
-            style="@style/Widget.AppCompat.Spinner.Underlined"
-            android:entries="@array/jenisKelamin"/>
-
-<!--        <EditText-->
-<!--            android:id="@+id/fdjenisKelamin"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginLeft="20dp"-->
-<!--            android:layout_marginRight="20dp"-->
-<!--            android:textColorLink="@color/fdForm"/>-->
+            android:entries="@array/jenisKelamin"
+            style="@style/Widget.AppCompat.Spinner.Underlined"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -144,7 +127,7 @@
             android:layout_margin="20dp"
             android:hint="@string/btn_simpan"
             android:textSize="20dp"
-            android:textColor="#ffff"
+            android:textColorHint="#fff"
             android:background="@color/colorAccent"/>
 
     </LinearLayout>

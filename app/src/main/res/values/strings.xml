@@ -1,4 +1,5 @@
 <resources>
+    <string name="profileTitle">Biodata</string>
     <string name="app_name">BiodataForm</string>
     <string name="title_biodata">Biodata Form</string>
     <string name="form_name">Nama</string>
@@ -7,9 +8,7 @@
     <string name="form_email">Email</string>
     <string name="form_telp">No.Telpon</string>
     <string name="form_alamat">Alamat</string>
-
     <string name="btn_simpan">Simpan</string>
-
 
     <string-array name="jenisKelamin">
         <item>Choose</item>
