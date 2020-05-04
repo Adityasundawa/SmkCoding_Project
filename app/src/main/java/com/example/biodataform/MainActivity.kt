@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
         data.putString("Nama", inputnama)
         data.putString("Gender", selectGender)
         data.putString("Email", inputEmail)
-        data.putString("umur", inputUmur)
+        data.putString("Umur", inputUmur)
         data.putString("No.Telpon", inputTelpon)
         data.putString("Alamat", inputAlamat)
 
