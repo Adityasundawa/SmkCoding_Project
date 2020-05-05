@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_margin="40dp"
-            android:layout_below="@+id/txAbout"
+            android:layout_below="@+id/imageAbout"
             android:background="@color/lineAbout"/>
 
         <LinearLayout
@@ -54,12 +54,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="50dp"
                     android:hint="Name                       : "
+                    android:textStyle="bold"
                     android:maxLines="3"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Dicky Samudra Alamsyah"
+                    android:textStyle="bold"
                     android:maxLines="3"/>
             </LinearLayout>
             <LinearLayout
@@ -75,12 +77,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="50dp"
                     android:hint="Email                        :"
+                    android:textStyle="bold"
                     android:maxLines="3"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="dickyalamsyah0901@gmail.com"
+                    android:textStyle="bold"
                     android:maxLines="3"/>
             </LinearLayout>
             <LinearLayout
@@ -96,12 +100,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="50dp"
                     android:hint="No.Hp                       :"
+                    android:textStyle="bold"
                     android:maxLines="3"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="0881026754330"
+                    android:textStyle="bold"
                     android:maxLines="3"/>
             </LinearLayout>
             <LinearLayout
@@ -117,12 +123,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="50dp"
                     android:hint="Alamat                     :"
+                    android:textStyle="bold"
                     android:maxLines="3"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Jl.Joyo taman sari"
+                    android:textStyle="bold"
                     android:maxLines="3"/>
             </LinearLayout>
         </LinearLayout>

@@ -30,13 +30,16 @@ class EditProfile : AppCompatActivity() {
 
     private fun saveData() {
         val nameEdit = edNama.text.toString()
+        val genderEdit = eddropjenisKelamin.selectedItem.toString()
         val emailEdit = edEmail.text.toString()
         val umurEdit = edUmur.text.toString()
         val telpEdit = ednoTelpon.text.toString()
         val alamatEdit = edAlamat.text.toString()
-        if (!nameEdit.isEmpty() || !emailEdit.isEmpty() || !umurEdit.isEmpty() || !telpEdit.isEmpty() || alamatEdit.isEmpty()){
+        if (!nameEdit.isEmpty() || !genderEdit.isEmpty() || !emailEdit.isEmpty() || !umurEdit.isEmpty() ||
+            !telpEdit.isEmpty() || alamatEdit.isEmpty()){
             val result = Intent()
             result.putExtra("Name", nameEdit)
+            result.putExtra("Gender", genderEdit)
             result.putExtra("Email", emailEdit)
             result.putExtra("Umur", umurEdit)
             result.putExtra("Telpon", telpEdit)

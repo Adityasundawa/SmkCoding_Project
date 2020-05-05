@@ -7,6 +7,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.profile.*
+import androidx.core.app.ComponentActivity
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+
+
 
 class Profile : AppCompatActivity() {
 
@@ -92,9 +98,7 @@ class Profile : AppCompatActivity() {
         }
 
     private fun goToCallPhone(phoneNumber: String) {
-        val intent = Intent(Intent.ACTION_DIAL).apply { data = Uri.parse("Telp.$phoneNumber") }
-        if (intent.resolveActivity(packageManager) !=null){
-            startActivity(intent)
-        }
+        val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber"))
+        startActivity(intent)
     }
 }
