@@ -2,10 +2,10 @@ package com.example.biodataform
 
 import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import kotlinx.android.synthetic.main.editprofile.*
 import kotlinx.android.synthetic.main.profile.*
 
 class Profile : AppCompatActivity() {
@@ -23,6 +23,8 @@ class Profile : AppCompatActivity() {
         btnAbout.setOnClickListener{ goToAboutActivity() }
 
         btnEdit.setOnClickListener { goToEditProfile() }
+
+        btnCall.setOnClickListener { goToCallPhone(txTelp.text.toString()) }
     }
 
     private fun getData(){
@@ -88,4 +90,11 @@ class Profile : AppCompatActivity() {
                 Toast.makeText(this,"Edit Failed", Toast.LENGTH_SHORT).show()
             }
         }
+
+    private fun goToCallPhone(phoneNumber: String) {
+        val intent = Intent(Intent.ACTION_DIAL).apply { data = Uri.parse("Telp.$phoneNumber") }
+        if (intent.resolveActivity(packageManager) !=null){
+            startActivity(intent)
+        }
+    }
 }
