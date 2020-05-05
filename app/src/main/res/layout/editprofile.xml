@@ -11,14 +11,24 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:hint="@string/edit_biodata"
-            android:gravity="center"
-            android:textSize="25dp"
-            android:fontFamily="sans-serif-black"/>
+            android:background="@drawable/backgroundprofile"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Edit Profile"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColorHint="#FFFF"
+                android:fontFamily="sans-serif-black"/>
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"

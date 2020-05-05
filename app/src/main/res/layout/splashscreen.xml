@@ -12,6 +12,9 @@
         android:gravity="center"
         android:keepScreenOn="true"
         android:text="Welcome"
+        android:background="@color/colorAccent"
+        android:textColor="#FFF"
+        android:textStyle="bold"
         android:textSize="40sp"/>
 
 </FrameLayout>

@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
+import android.widget.Toast
 import kotlinx.android.synthetic.main.editprofile.*
 
 class EditProfile : AppCompatActivity() {
@@ -47,11 +48,17 @@ class EditProfile : AppCompatActivity() {
             result.putExtra("Umur", umurEdit)
             result.putExtra("Telpon", telpEdit)
             result.putExtra("Alamat", alamatEdit)
+
             setResult(Activity.RESULT_OK, result)
+            showToast("Edit Berhasil")
 
         }else {
             setResult(Activity.RESULT_CANCELED)
         }
         finish()
+    }
+
+    private fun showToast(message: String){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }

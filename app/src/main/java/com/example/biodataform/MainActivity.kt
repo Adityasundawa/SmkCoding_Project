@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
             inputAlamat.isEmpty() -> fdAlamat.error = "Alamat Harus Diisi"
 
             else -> {
-                showToast("Ke Halaman Profile")
+                showToast("Data Berhasil Disimpan")
                 goToProfileActivity()
             }
         }

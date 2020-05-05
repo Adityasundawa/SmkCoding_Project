@@ -4,137 +4,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/header">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/imageAbout"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_margin="20dp"
-            android:background="@drawable/logobiodata"/>
-
-        <TextView
-            android:id="@+id/txAbout"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            android:layout_toEndOf="@+id/imageAbout"
-            android:hint="ABOUT ME"
-            android:gravity="center_vertical"
-            android:padding="15dp"
-            android:textSize="40dp"/>
-
-        <View
-            android:id="@+id/viewLine"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_margin="40dp"
-            android:layout_below="@+id/imageAbout"
-            android:background="@color/lineAbout"/>
+        android:id="@+id/header"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/viewLine"
+            android:background="@drawable/backgroundprofile"
+            android:layout_marginBottom="20dp"
             android:orientation="vertical">
 
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:orientation="horizontal">
+                android:layout_margin="20dp"
+                android:hint="About Me"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColorHint="#FFFF"
+                android:fontFamily="sans-serif-black"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="50dp"
-                    android:hint="Name                       : "
-                    android:textStyle="bold"
-                    android:maxLines="3"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Dicky Samudra Alamsyah"
-                    android:textStyle="bold"
-                    android:maxLines="3"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="50dp"
-                    android:hint="Email                        :"
-                    android:textStyle="bold"
-                    android:maxLines="3"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="dickyalamsyah0901@gmail.com"
-                    android:textStyle="bold"
-                    android:maxLines="3"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="50dp"
-                    android:hint="No.Hp                       :"
-                    android:textStyle="bold"
-                    android:maxLines="3"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="0881026754330"
-                    android:textStyle="bold"
-                    android:maxLines="3"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="50dp"
-                    android:hint="Alamat                     :"
-                    android:textStyle="bold"
-                    android:maxLines="3"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Jl.Joyo taman sari"
-                    android:textStyle="bold"
-                    android:maxLines="3"/>
-            </LinearLayout>
         </LinearLayout>
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/my" />
 
-    </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:hint="Dicky Samudra Alamsyah"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="dickyalamsyah0901@gmail.com"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="0881026754330"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Malang, Jawa Timur, Indonesia"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 </ScrollView>

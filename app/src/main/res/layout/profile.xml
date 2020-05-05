@@ -11,26 +11,38 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/profileTitle"
-            android:gravity="center"
-            android:textSize="25dp"
-            android:layout_margin="20dp"
-            android:textStyle="bold"/>
+            android:background="@drawable/backgroundprofile"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            android:background="@drawable/logobiodata"/>
+            <TextView
+                android:id="@+id/titleProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="My Profile"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColorHint="#fff"
+                android:layout_margin="20dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/logobiodata"/>
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:orientation="horizontal">
 
@@ -46,14 +58,14 @@
                 android:id="@+id/txNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nama Lengkap"
+                android:hint="None"
                 android:maxLines="3"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:orientation="horizontal">
 
@@ -69,14 +81,14 @@
                 android:id="@+id/txGender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Jenis Kelamin"
+                android:hint="None"
                 android:maxLines="3"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:orientation="horizontal">
 
@@ -92,14 +104,14 @@
                 android:id="@+id/txUmur"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Umur(th)"
+                android:hint="None"
                 android:maxLines="3"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:orientation="horizontal">
 
@@ -115,14 +127,14 @@
                 android:id="@+id/txEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
+                android:hint="None"
                 android:maxLines="3"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:orientation="horizontal">
 
@@ -138,14 +150,14 @@
                 android:id="@+id/txTelp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Telp"
+                android:hint="None"
                 android:maxLines="3"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:orientation="horizontal">
 
@@ -161,7 +173,7 @@
                 android:id="@+id/txAlamat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Alamat"
+                android:hint="None"
                 android:maxLines="3"/>
         </LinearLayout>
         <LinearLayout
